@@ -9,5 +9,5 @@ Moreover it points at flakified aiken (https://github.com/waalge/aiken).
 
 ## Issues
 
-- [asset_inline](./example/assert_inline)
+- [asset_inline](./examples/assert_inline)
 
