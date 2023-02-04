@@ -1,60 +1,14 @@
-# data_issue
+# Assert Inline 
 
-Write validators in the `validators` folder, and supporting functions in the `lib` folder using `.ak` as a file extension.
+I expected this to work, but apparently it doesn't.
+I've written it before in code that compiled ok, but fails here.  
 
-For example, as `validators/always_true.ak`
-
-```gleam
-pub fn spend(_datum: Data, _redeemer: Data, _context: Data) -> Bool {
-  True
-}
+```
+  assert InlineDatum(dat) = outputs.datum 
 ```
 
-Validators are named after their purpose, so one of:
-
-- `spent`
-- `mint`
-- `withdraw`
-- `publish`
-
-## Building
-
-```sh
-aiken build
+Tested, and fails, on commits
 ```
-
-## Testing
-
-You can write tests in any module using the `test` keyword. For example:
-
-```gleam
-test foo() {
-  1 + 1 == 2
-}
+waalge/aiken/14f4ac735ea5509875ecb41a131901032bcba972
+waalge/aiken/8b1673f6bead5bc7e67e976ad7f7f4cb375c183f
 ```
-
-To run all tests, simply do:
-
-```sh
-aiken check
-```
-
-To run only tests matching the string `foo`, do:
-
-```sh
-aiken check -m foo
-```
-
-## Documentation
-
-If you're writing a library, you might want to generate an HTML documentation for it.
-
-Use:
-
-```sh
-aiken docs
-```
-
-## Resources
-
-Find more on the [Aiken's user manual](https://aiken-lang.org).
