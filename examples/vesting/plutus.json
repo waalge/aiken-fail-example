@@ -1,0 +1,54 @@
+{
+  "preamble": {
+    "title": "waalge/vesting",
+    "description": "Aiken contracts for project 'waalge/vesting'",
+    "version": "0.0.0",
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "vesting",
+      "purpose": "spend",
+      "datum": {
+        "title": "Datum",
+        "anyOf": [
+          {
+            "title": "Datum",
+            "dataType": "constructor",
+            "index": 0,
+            "fields": [
+              {
+                "title": "lock_until",
+                "description": "POSIX time in second, e.g. 1672843961000",
+                "dataType": "integer"
+              },
+              {
+                "title": "owner",
+                "description": "Owner's credentials",
+                "dataType": "bytes"
+              },
+              {
+                "title": "beneficiary",
+                "description": "Beneficiary's credentials",
+                "dataType": "bytes"
+              }
+            ]
+          }
+        ]
+      },
+      "redeemer": {
+        "title": "Unit",
+        "description": "The nullary constructor.",
+        "anyOf": [
+          {
+            "dataType": "constructor",
+            "index": 0,
+            "fields": []
+          }
+        ]
+      },
+      "compiledCode": "5901a80100003232323232322225333004323253330063370e600e6ea8cc004c00800d2002480084c8cc004004c8c8cc030ccc024cc004cc010c0140192000375c66008600a0109001260103d87a80004c0103d87980003300c33300932330010013300d33300a3300233005300600748000dd7198029803004a4008980103d87a80004c0103d87980003300d33300a332232533300d3370e601c6ea800520021337120046eb4c044c024004528198039804198039804001240009000198029803198029803003a400090071bad33005300600948001300103d87a80004c0103d87980004bd701129998068008a511533300b3370e900118061baa300f001133002002301000114a098103d87a80004c0103d87980004bd70111998018019bac330053006002480400048894ccc0300085280a99980519b8f375c601c00400229444ccc00c00cc03c008004894ccc0280045280a99980419b8748008c024dd518060008a51133002002300d00114a044646660020029000001911199980519b8700400200e2333004004337000069001180800080091aab9e37540022930b2b9a5573aaae7d5d02ba15745",
+      "hash": "b67784b305d1539354214d069ef88a581f6e5c7ba6023f58e2f78854"
+    }
+  ]
+}
