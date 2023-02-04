@@ -9,6 +9,8 @@ Moreover it points at flakified aiken (https://github.com/waalge/aiken).
 
 ## Issue 
 
+`./example/assert_inline`
+
 Introduced `waalge/aiken`: 
 ```sample
 - From : 14f4ac735ea5509875ecb41a131901032bcba972 

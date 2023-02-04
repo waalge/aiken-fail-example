@@ -1,11 +1,11 @@
-name = 'waalge/data_issue'
+name = 'waalge/assert_inline'
 version = '0.0.0'
 license = 'Apache-2.0'
-description = "Aiken contracts for project 'waalge/data_issue'"
+description = "Aiken contracts for project 'waalge/assert_inline'"
 
 [repository]
 user = 'waalge'
-project = 'data_issue'
+project = 'assert_inline'
 platform = 'github'
 
 [[dependencies]]

@@ -1,0 +1,24 @@
+{
+  "preamble": {
+    "title": "waalge/assert_inline",
+    "description": "Aiken contracts for project 'waalge/assert_inline'",
+    "version": "0.0.0",
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "fail",
+      "purpose": "spend",
+      "datum": {
+        "title": "Datum",
+        "anyOf": []
+      },
+      "redeemer": {
+        "title": "Redeemer",
+        "anyOf": []
+      },
+      "compiledCode": "4d01000022253335734944526161",
+      "hash": "455f24922a520c59499fdafad95e1272fab81a99452f6b9545f95337"
+    }
+  ]
+}
