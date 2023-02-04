@@ -1,11 +1,11 @@
-name = 'waalge/onchain'
+name = 'waalge/data_issue'
 version = '0.0.0'
 license = 'Apache-2.0'
-description = "Aiken contracts for project 'waalge/onchain'"
+description = "Aiken contracts for project 'waalge/data_issue'"
 
 [repository]
 user = 'waalge'
-project = 'onchain'
+project = 'data_issue'
 platform = 'github'
 
 [[dependencies]]

@@ -1,4 +1,4 @@
-# onchain
+# data_issue
 
 Write validators in the `validators` folder, and supporting functions in the `lib` folder using `.ak` as a file extension.
 
