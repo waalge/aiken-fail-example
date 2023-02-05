@@ -1,26 +1,20 @@
 use aiken/transaction.{
     ScriptContext,
-    InlineDatum
+    InlineDatum,
+    Datum, 
 }
 
 type Redeemer {
 }
 
-type Datum {
-  Datum(Int) 
+type MyDatum {
+  MyDatum(Int) 
 }
 
 fn spend(_dat: Datum, _red: Redeemer, ctx: ScriptContext) {
   let outputs = ctx.transaction.outputs
   assert [output, ..] = outputs
-  let _ = when output.datum is {
-    InlineDatum(datum) -> { 
-      when datum is { 
-        Datum(_x) -> True 
-        _ -> False 
-      }
-    }
-    _ -> error("bad datum")
-  }
+  assert InlineDatum(datum) = output.datum
+  assert Datum(_x) : Datum = datum 
   True
 }
