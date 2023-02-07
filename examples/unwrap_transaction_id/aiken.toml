@@ -1,0 +1,14 @@
+name = 'waalge/unwrap_transaction_id'
+version = '0.0.0'
+license = 'Apache-2.0'
+description = "Aiken contracts for project 'waalge/unwrap_transaction_id'"
+
+[repository]
+user = 'waalge'
+project = 'unwrap_transaction_id'
+platform = 'github'
+
+[[dependencies]]
+name = 'aiken-lang/stdlib'
+version = 'main'
+source = 'github'
