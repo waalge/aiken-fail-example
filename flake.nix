@@ -6,7 +6,7 @@
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs";
     # aiken.url="github:waalge/aiken?ref=w/flake";
-    aiken.url = "github:waalge/aiken/f5a506ac17095f860cf8bc4114c0eeddfe28c2fd";
+    aiken.url = "github:waalge/aiken/ef0f02eb6494b5c3c363c11f3c02143ba588a704";
   };
 
   outputs = {self, ...} @ inputs:
