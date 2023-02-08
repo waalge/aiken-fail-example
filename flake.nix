@@ -7,7 +7,7 @@
     nixpkgs.url = "github:nixos/nixpkgs";
     # aiken.url="github:waalge/aiken?ref=w/flake";
     # aiken.url = "github:waalge/aiken/d88548bf17b5b7d91d604f18f53c2c93dd4f2c1f";
-    aiken.url = "github:aiken-lang/aiken/5cefe260789e0e0c4c3f33ceced31565c46e2aeb";
+    aiken.url = "github:aiken-lang/aiken/374dec7281315658634024aeb9cda05881353ac5";
   };
 
   outputs = {self, ...} @ inputs:
