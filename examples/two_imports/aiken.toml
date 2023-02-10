@@ -1,0 +1,14 @@
+name = 'waalge/two_imports'
+version = '0.0.0'
+license = 'Apache-2.0'
+description = "Aiken contracts for project 'waalge/two_imports'"
+
+[repository]
+user = 'waalge'
+project = 'two_imports'
+platform = 'github'
+
+[[dependencies]]
+name = 'aiken-lang/stdlib'
+version = 'main'
+source = 'github'
