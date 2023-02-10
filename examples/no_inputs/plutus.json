@@ -1,0 +1,37 @@
+{
+  "preamble": {
+    "title": "waalge/no_inputs",
+    "description": "Aiken contracts for project 'waalge/no_inputs'",
+    "version": "0.0.0",
+    "license": "Apache-2.0"
+  },
+  "validators": [
+    {
+      "title": "no_inputs",
+      "purpose": "mint",
+      "redeemer": {
+        "title": "Redeemer",
+        "anyOf": [
+          {
+            "title": "MintR",
+            "dataType": "constructor",
+            "index": 0,
+            "fields": [
+              {
+                "dataType": "bytes"
+              }
+            ]
+          },
+          {
+            "title": "BurnR",
+            "dataType": "constructor",
+            "index": 1,
+            "fields": []
+          }
+        ]
+      },
+      "compiledCode": "58ae010000323232323232322253330033232323253330073370e002900009919299980499b87001480005288a50300937540026464a666018002266e9520024bd70099ba548000cc034c0380052f5c00026eb0cc00cc010cc00cc01001520004800052818039baa0013300130020034800888c8ccc004005200000322233330093370e00800401c466600800866e0000d200230100010012300637540022930b2b9a5573aaae7955cfaba05742ae881",
+      "hash": "1c93d34947fb3053de5dbaa4d26054a36abbb68c2fa246120bb89090"
+    }
+  ]
+}

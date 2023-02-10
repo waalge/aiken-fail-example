@@ -1,0 +1,14 @@
+name = 'waalge/no_inputs'
+version = '0.0.0'
+license = 'Apache-2.0'
+description = "Aiken contracts for project 'waalge/no_inputs'"
+
+[repository]
+user = 'waalge'
+project = 'no_inputs'
+platform = 'github'
+
+[[dependencies]]
+name = 'aiken-lang/stdlib'
+version = 'main'
+source = 'github'
