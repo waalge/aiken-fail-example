@@ -5,9 +5,7 @@
     devshell.url = "github:numtide/devshell";
     flake-utils.url = "github:numtide/flake-utils";
     nixpkgs.url = "github:nixos/nixpkgs";
-    # aiken.url="github:waalge/aiken?ref=w/flake";
-    # aiken.url = "github:waalge/aiken/d88548bf17b5b7d91d604f18f53c2c93dd4f2c1f";
-    aiken.url = "github:aiken-lang/aiken/22f5ecc8c65b8556d326c2e839e228e99566c737";
+    aiken.url = "github:aiken-lang/aiken/f747ee0aca9dd1a7a0dbd7889f3e11ccb5bc0655";
   };
 
   outputs = {self, ...} @ inputs:
@@ -34,10 +32,10 @@
             category = "editor";
             help = "open nvim with aiken config";
             command = ''
-              nvim -S ${self}/.nvim-aiken/ftdetect/aiken.vim \
-                   -S ${self}/.nvim-aiken/indent/aiken.vim \
-                   -S ${self}/.nvim-aiken/syntax/aiken.vim \
-                   --cmd "autocmd FileType aiken setlocal shiftwidth=2 tabstop=2" \
+              nvim -c "source ${self}/.nvim-aiken/ftdetect/aiken.vim" \
+                   -c "source ${self}/.nvim-aiken/indent/aiken.vim" \
+                   -c "source ${self}/.nvim-aiken/syntax/aiken.vim" \
+                   -c "set shiftwidth=2" \
                   $1
             '';
           }
