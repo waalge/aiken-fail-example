@@ -1,9 +1,7 @@
 use aiken/transaction/value.{
   flatten
 }
-// use two_imports/value.{ unflatten } // Doesn't work
-// use two_imports/value as my_value.{ unflatten }  // Doesn't work.
-use two_imports/value as x 
+use two_imports/value.{unflatten} as my_value // Works! 
 use aiken/transaction.{
   ScriptContext,
   Mint,
@@ -18,8 +16,7 @@ fn mint(_red: Redeemer, ctx: ScriptContext) {
       ctx.transaction.mint == {
         ctx.transaction.mint 
           |> flatten() 
-          // |> unflatten()
-          |> x.unflatten()
+          |> unflatten()
       }
     }
     _ -> False
