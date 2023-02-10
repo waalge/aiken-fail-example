@@ -16,17 +16,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1675846842,
-        "narHash": "sha256-r+4nJdiR24kZL+fW/6plM7rncWKKpoHGLyU8wDgj2Ls=",
+        "lastModified": 1676020528,
+        "narHash": "sha256-wP4tRlUB1VbmfvqzSh3llC3n1TZaihVtJPGRZqfEK1I=",
         "owner": "aiken-lang",
         "repo": "aiken",
-        "rev": "374dec7281315658634024aeb9cda05881353ac5",
+        "rev": "22f5ecc8c65b8556d326c2e839e228e99566c737",
         "type": "github"
       },
       "original": {
         "owner": "aiken-lang",
         "repo": "aiken",
-        "rev": "374dec7281315658634024aeb9cda05881353ac5",
+        "rev": "22f5ecc8c65b8556d326c2e839e228e99566c737",
         "type": "github"
       }
     },
